@@ -2,6 +2,7 @@ type Registry = {
 	[key: string]: { source: any, target: any }
 }
 
+/** Restore references for the parsed JSON object received as parameter */
 export default function retrocycle(obj: any) : any {
 	let registry = getRegistry(obj);
 	return Object.keys(registry).length > 0 ? getResolvedObject(obj, registry) : obj;
