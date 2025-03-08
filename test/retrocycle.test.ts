@@ -1,5 +1,5 @@
 import { describe, test, expect } from 'vitest';
-import { retrocycle } from '../src/retrocycle';
+import retrocycle from '../src/retrocycle';
 
 describe("retrocycle", () => {
 	test("should resolve when no references", () => {
