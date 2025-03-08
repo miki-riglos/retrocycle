@@ -2,7 +2,7 @@ type Registry = {
 	[key: string]: { source: any, target: any }
 }
 
-export default function retrocycle(obj: any) {
+export default function retrocycle(obj: any) : any {
 	let registry = getRegistry(obj);
 	return Object.keys(registry).length > 0 ? getResolvedObject(obj, registry) : obj;
 }
