@@ -1,8 +1,17 @@
 {
-  "name": "@mro/retrocycle",
+  "name": "@miki-riglos/retrocycle",
   "private": false,
-  "version": "0.3.0",
+  "version": "0.5.0",
   "type": "module",
+  "files": ["dist"],
+  "module": "./dist/retrocycle.js",
+  "main": "./dist/retrocycle.umd.cjs",
+  "exports": {
+    ".": {
+      "import": "./dist/retrocycle.js",
+      "require": "./dist/retrocycle.umd.cjs"
+    }
+  },
   "scripts": {
     "build": "tsc && vite build",
     "test": "vitest"
