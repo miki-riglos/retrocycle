@@ -1,7 +1,7 @@
 {
   "name": "@miki-riglos/retrocycle",
   "private": false,
-  "version": "0.6.0",
+  "version": "0.7.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/miki-riglos/retrocycle"
@@ -16,6 +16,7 @@
       "require": "./dist/retrocycle.umd.cjs"
     }
   },
+  "types": "./dist/retrocycle.d.ts",
   "scripts": {
     "build": "tsc && vite build",
     "test": "vitest"
@@ -24,6 +25,7 @@
     "@types/node": "^22.13.10",
     "typescript": "~5.7.2",
     "vite": "^6.2.0",
+    "vite-plugin-dts": "^4.5.3",
     "vitest": "^3.0.8"
   }
 }
